@@ -1,0 +1,14 @@
+package nextGenerationAutomationLearnJava;
+
+3. public class LargestValue {
+4. public static void main(String[] args){
+5. int[] arr={28,3,15,9,17,4,23,2};
+6. int val=arr[0];
+7. for(int i=0; i<arr.length; i++){
+8. if(arr[i] > val){
+9. val=arr[i];
+10. }
+11. }
+12. System.out.println("Largest value in the Given Array is "+ val);
+13. }
+14. }

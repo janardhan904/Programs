@@ -45,3 +45,38 @@ Output:
 41
 43
 47
+
+
+How to display all the prime numbers between 1 and n (n is the number, get
+the input from user)
+Answer:
+package nextGenerationAutomationLearnJava;
+import java.util.Scanner;
+public class PrimeNumbersOneToN {
+public static void main (String[] args){
+7. Scanner scanner = new Scanner(System.in);
+8. int i =0;
+9. int num =0;
+10. String primeNumbers = "";
+11. System.out.println("Enter the value of n :");
+12. int n = scanner.nextInt();
+13. scanner.close();
+14. for (i = 1; i <= n; i++)
+15. {
+16. int counter=0;
+17. for(num =i; num>=1; num--)
+18. {
+19. if(i%num==0)
+20. {
+21. counter = counter + 1;
+22. }
+23. }
+24. if (counter ==2)
+25. {
+26. primeNumbers = primeNumbers + i + " ";
+27. }
+28. }
+29. System.out.println("Prime numbers from 1 to n are :");
+30. System.out.println(primeNumbers);
+31. }
+32. } 

@@ -1,0 +1,21 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 1, 2, 3, 7, 6, 3 };
+            Console.WriteLine(ContainsDuplicates(numbers));
+        }
+
+        public static bool ContainsDuplicates(params int[] x)
+        {
+            Dictionary<int, int> d = new Dictionary<int, int>();
+            foreach (int i in x)
+            {
+                if (d.ContainsKey(i))
+                    return true;
+                else
+                    d.Add(i, 1);
+            }
+            return false;
+        }
+    }

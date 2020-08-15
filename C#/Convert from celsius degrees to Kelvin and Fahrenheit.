@@ -1,0 +1,3 @@
+kelvin = celsius + 273
+fahrenheit = celsius x 18 / 10 + 32
+
